@@ -1,4 +1,6 @@
 const test = document.querySelector('.test');
+const display = document.querySelector('.display');
+const btnNum = document.querySelector('.numbers');
 
 // -------funções de matemática básica------------
 
@@ -27,4 +29,24 @@ function operate (num1, num2, operator) {
     }
 }
 
+//Mostrar valores ao clicar  nos botões
+
+function displayValue (num) { display.innerHTML += num;};
+
+//Calculadora funcionando
+
+function calculator () {
+    num1 = displayValue(num);
+    const operator = function operator(theOperator) {
+        return theOperator;
+    }
+
+    if (operator === '+') {
+        alert('É mais?')
+    }
+}
+
+function clean () {
+    display.innerHTML = '';
+}
 test.innerHTML = operate(2,2, '/');
