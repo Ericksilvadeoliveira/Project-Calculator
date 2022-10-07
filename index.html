@@ -5,32 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="test"></div>
     <div class="calculator">
         <div class="display"></div>
-        <div class="numbers">
-            <button onclick="displayValue(this.value)" value="1">1</button>
-            <button onclick="displayValue(this.value)" value="2">2</button>
-            <button onclick="displayValue(this.value)" value="3">3</button>
-            <button onclick="displayValue(this.value)" value="4">4</button>
-            <button onclick="displayValue(this.value)" value="5">5</button>
-            <button onclick="displayValue(this.value)" value="6">6</button>
-            <button onclick="displayValue(this.value)" value="7">7</button>
-            <button onclick="displayValue(this.value)" value="8">8</button>
-            <button onclick="displayValue(this.value)" value="9">9</button>
-            <button onclick="displayValue(this.value)" value="0">0</button>
+        <div class="row">
+            <div class="button" data-value="7">7</div>
+            <div class="button" data-value="8">8</div>
+            <div class="button" data-value="9">9</div>
+            <div class="button" data-value="/">/</div>
         </div>
-        <div class="aperators">
-            <button onclick="operator(this.value)" value="+">+</button>
-            <button>-</button>
-            <button>*</button>
-            <button>/</button>
+        <div class="row">
+            <div class="button" data-value="4">4</div>
+            <div class="button" data-value="5">5</div>
+            <div class="button" data-value="6">6</div>
+            <div class="button" data-value="*">*</div>
         </div>
-        <div class="controls">
-            <button onclick="calculator()">=</button>
-            <button onclick="clean()">C</button>
+        <div class="row">
+            <div class="button" data-value="1">1</div>
+            <div class="button" data-value="2">2</div>
+            <div class="button" data-value="3">3</div>
+            <div class="button" data-value="-">-</div>
+        </div>
+        <div class="row">
+            <div class="button" data-value="C">C</div>
+            <div class="button" data-value="0">0</div>
+            <div class="button" data-value="=">=</div>
+            <div class="button" data-value="+">+</div>
         </div>
     </div>
 </body>

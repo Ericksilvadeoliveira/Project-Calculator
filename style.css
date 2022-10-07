@@ -1,0 +1,26 @@
+.calculator {
+    width:300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+
+}
+
+.display {
+    box-sizing: border-box;
+    width: 208px;
+    height: 104px;
+    background-color: lightgray;
+}
